@@ -1,0 +1,80 @@
+* {
+    position: relative;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 0.520834vw;
+    min-width: 32em;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 134em;
+    margin: 0 auto;
+
+    .content {
+        text-align: left;
+        p {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 0.1em;
+    font-weight: 600;
+    font-size: 1.6em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: 0.2em solid transparent;
+}
+
+.btn--gold {
+    color: $white;
+    background-color: $gold;
+
+    &:hover {
+        background-color: $goldHover;
+    }
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.6em;
+    font-weight: 600;
+}
+
+.b-quizgo-wrapper .b-quizgo-modal iframe .b-first-slide-side__image {
+    @media screen and (max-width: 991px) {
+        display: none !important;
+    }
+}
+
+.columns {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    .column {
+        width: 100%;
+    }
+    .column--half {
+        width: 50%;
+    }
+    .column--third {
+        width: 33.3333%;
+    }
+}

@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		)
+		title= "Valeryinterior.ru - дизайн и хоумстейджинг от профессионала Валерии Закерничной"
+		link(
+			rel="stylesheet",
+			href="/css/style.min.css"
+		)
+		script(src='/js/libs.min.js')
+		script(src='/js/main.js')
+		//- script(src='//panel.quizgo.ru/common?q=62822')
+
+	body.home
+		include ../parts/header.pug
+		include ../parts/who_i_am.pug
+		include ../parts/my_partners.pug
+		include ../parts/my_profile.pug
+		include ../parts/services.pug
+		include ../parts/projects.pug
+		include ../parts/contacts.pug
+		
+		//- include ../parts/footer.pug

@@ -1,0 +1,135 @@
+.services {
+    padding: 11.5em 0 6em;
+
+    .container {
+        .section-title {
+            margin-bottom: 0.5em;
+        }
+
+        .content {
+            margin-bottom: 2em;
+            text-align: center;
+        }
+
+        .services-list {
+            .service {
+                padding: 10em 0 10em 7em;
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .service-header {
+                    margin-bottom: 5em;
+                    .service-number {
+                        font-size: 9.6em;
+                        font-weight: 900;
+                        padding: 0 0.25em 0 0;
+                        display: inline-block;
+                        flex: none;
+                        color: $text;
+                    }
+                    .service-title {
+                        color: $text;
+                        display: inline-block;
+                        flex: 1;
+                        font-size: 3.6em;
+                        font-weight: 500;
+                    }
+                    .service-subtitle {
+                        padding: 0 0 0 8em;
+                        color: $grayDark;
+                        .content {
+                            max-width: 90%;
+                            text-align: left;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .columns {
+                    .column--price {
+                        padding: 0.8em 0 0 2.2em;
+                        .price {
+                            color: $text;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            margin-bottom: 4.4em;
+
+                            .price-title {
+                                font-weight: 700;
+                                font-size: 2em;
+                                width: 6em;
+                            }
+                            .price-size {
+                                font-size: 2.8em;
+                            }
+                        }
+                        .price--second {
+                            margin-top: 8em;
+                        }
+                        .content {
+                            color: $grayDark;
+                        }
+                    }
+                    .column--details {
+                        padding: 0 0 0 5em;
+                        .details {
+                            margin: 0 0 6em 0;
+
+                            .delails-item {
+                                display: block;
+                                font-size: 2em;
+                                line-height: 1.5;
+                                margin-bottom: 1.8em;
+                                padding: 0 0 0 2.7em;
+                                color: $grayDark;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                &::before {
+                                    position: absolute;
+                                    display: block;
+                                    content: "";
+                                    width: 1.75em;
+                                    height: 1.5em;
+                                    background-image: url(/img/icon-ok.svg);
+                                    background-size: contain;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    top: 0;
+                                    left: 0;
+                                }
+                            }
+                        }
+                    }
+                    .controls {
+                        text-align: center;
+                        .btn {
+                            font-size: 2em;
+                            padding: 0.5em 2em;
+                        }
+                        .btn--gold {
+                        }
+                    }
+                }
+            }
+            .service--consult {
+            }
+            .service--complect {
+                .columns {
+                    .column--price {
+                        .price {
+                            .price-title {
+                                width: 0;
+                            }
+                        }
+                        .content {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

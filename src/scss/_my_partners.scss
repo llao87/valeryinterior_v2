@@ -1,0 +1,30 @@
+.my-partners {
+    padding: 3.5em 0;
+    .container {
+        .section-title {
+            margin-bottom: 2em;
+        }
+
+        .partners-slider {
+            overflow-x: hidden;
+            .partner {
+                .swiper-slide {
+                    padding: 1em;
+                    .inner {
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        height: 14.7em;
+                        border: 0.1em solid #e1e1e1;
+                        filter: grayscale(1);
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            filter: grayscale(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

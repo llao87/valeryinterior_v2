@@ -1,0 +1,41 @@
+.my-profile {
+    padding: 10.5em 0;
+
+    .container {
+        .section-title {
+            margin-bottom: 2em;
+        }
+
+        .profile-points {
+            list-style-type: none;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .profile-item {
+                display: block;
+                width: 50%;
+                font-size: 2em;
+                margin-bottom: 2em;
+                padding: 0 0 0 6.5em;
+                line-height: 1.5;
+
+                &::before {
+                    position: absolute;
+                    display: inline-block;
+                    content: "";
+                    width: 1.4em;
+                    height: 1.4em;
+                    background-image: url(/img/icon-list-bullet.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    top: 0;
+                    left: 4em;
+                    margin: 0 1em 0 0;
+                }
+            }
+        }
+    }
+}

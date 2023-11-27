@@ -1,0 +1,119 @@
+.projects {
+    padding: 2em 0 10em 0;
+    .container {
+        .section-title {
+            margin-bottom: 2.5em;
+        }
+
+        .columns {
+            padding: 0 5em;
+            .column {
+                .gallery-image {
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 53em;
+                    width: 100%;
+                }
+            }
+            .details {
+                padding-left: 10em;
+                .project-details {
+                    .title {
+                        font-size: 2.8em;
+                        color: $text;
+                        font-weight: 700;
+                    }
+                    .address {
+                        font-size: 2em;
+                        line-height: 1.5;
+                    }
+
+                    .works {
+                        margin: 4em 0 8em 0;
+                        .title {
+                            margin-bottom: 0.5em;
+                        }
+                        .works-lines {
+                            list-style: none;
+                            .work {
+                                font-size: 2em;
+                                line-height: 1;
+                                margin-bottom: 1em;
+                            }
+                        }
+                    }
+                    .info {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .icon-info {
+                            width: 3em;
+                            height: 3em;
+                            margin: 0 0.5em 0.5em 0;
+                        }
+                        .info-text {
+                            font-size: 2em;
+                            color: $gold;
+                        }
+                    }
+                }
+            }
+        }
+        .controls {
+            margin: 7.8em 0;
+            display: flex;
+            justify-content: space-between;
+
+            .prev-project,
+            .next-project {
+                font-size: 2em;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $gold;
+                cursor: pointer;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    color: $goldHover;
+                }
+            }
+            .prev-project {
+                display: flex;
+                align-items: center;
+                padding-left: 2em;
+
+                &::before {
+                    display: inline-block;
+                    position: absolute;
+                    content: "";
+                    background-image: url(../img/icon-slider-prev.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 21em;
+                    width: 1.2em;
+                    left: 0;
+                }
+            }
+            .next-project {
+                display: flex;
+                align-items: center;
+                padding-right: 2em;
+                &::after {
+                    display: inline-block;
+                    position: absolute;
+                    content: "";
+                    background-image: url(../img/icon-slider-next.svg);
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 2.1em;
+                    width: 1.2em;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
